@@ -1,5 +1,5 @@
 .env
-.streamlit
+secrets.toml
 __pycache__/
 BN knowledge_base/
 app.log
