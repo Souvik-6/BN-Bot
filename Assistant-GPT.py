@@ -11,8 +11,8 @@ from streamlit_feedback import streamlit_feedback
 from streamlit_option_menu import option_menu
 
 # Load environment variables
-os.getenv['OPENAI_API_KEY'] = st.secrets['OPENAI_API_KEY']
-os.getenv['ASSISTANT_ID'] = st.secrets['ASSISTANT_ID']
+os.getenv('OPENAI_API_KEY') = st.secrets['OPENAI_API_KEY']
+os.getenv('ASSISTANT_ID') = st.secrets['ASSISTANT_ID']
 
 # Set up logging
 logging.basicConfig(level=logging.INFO)
