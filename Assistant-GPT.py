@@ -11,8 +11,8 @@ from streamlit_feedback import streamlit_feedback
 from streamlit_option_menu import option_menu
 
 # Load environment variables
-os.getenv('OPENAI_API_KEY') = st.secrets['OPENAI_API_KEY']
-os.getenv('ASSISTANT_ID') = st.secrets['ASSISTANT_ID']
+os.environ['OPENAI_API_KEY'] = st.secrets['OPENAI_API_KEY']
+os.environ['ASSISTANT_ID'] = st.secrets['ASSISTANT_ID']
 
 # Set up logging
 logging.basicConfig(level=logging.INFO)
@@ -70,10 +70,10 @@ if not check_password():
     st.stop()
 
 # Initialize OpenAI client
-openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = os.environ["OPENAI_API_KEY"]
 client = openai.OpenAI()
 model = "gpt-4o-mini"
-assistant_id = os.getenv("ASSISTANT_ID")
+assistant_id = os.environ["ASSISTANT_ID"]
 
 # Initialize session state variables
 if "thread_id" not in st.session_state:
