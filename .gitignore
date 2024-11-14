@@ -1,0 +1,15 @@
+.env
+.streamlit
+__pycache__/
+BN knowledge_base/
+app.log
+BN_GPT.py
+Feedbacks/
+later.py
+Rag app/
+Training docs
+venv/
+requirements.txt
+BN_GPT code.txt
+Later/
+Training docs/
