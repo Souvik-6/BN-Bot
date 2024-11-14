@@ -11,7 +11,7 @@ from streamlit_feedback import streamlit_feedback
 from streamlit_option_menu import option_menu
 
 # Load environment variables
-load_dotenv()
+load_dotenv() = st.secrets()
 
 # Set up logging
 logging.basicConfig(level=logging.INFO)
